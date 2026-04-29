@@ -61,6 +61,12 @@ window-padding-y = 8
 EOF
 ```
 
+💡 Opcional: crear el directorio donde voy a copiar los repos.
+
+```bash
+mkdir -p ~/repos
+```
+
 ---
 
 ## 3. 🐚 Oh My Zsh
@@ -193,6 +199,12 @@ Corre varios agentes de Claude en paralelo.
 
 ```bash
 brew install --cask conductor
+```
+
+Monitor de uso de Codex y Claude en la barra de menú.
+
+```bash
+brew install --cask steipete/tap/codexbar
 ```
 
 ---
