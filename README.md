@@ -1,4 +1,4 @@
-# new_macos
+# mac-setup
 
 Setup de una Mac nueva. Ejecutar en orden.
 
