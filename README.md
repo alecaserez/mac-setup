@@ -71,11 +71,13 @@ Framework para `zsh`: temas, plugins, mejor prompt. Va antes de los CLI tools po
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/install.sh)"
 ```
 
-Cerrar y volver a abrir la terminal. Tema en `~/.zshrc`:
+Setear el tema en `~/.zshrc` (sobreescribe la línea que dejó el instalador).
 
 ```bash
-ZSH_THEME="robbyrussell"
+sed -i '' 's/^ZSH_THEME=.*/ZSH_THEME="robbyrussell"/' ~/.zshrc
 ```
+
+Cerrar y volver a abrir la terminal para aplicar el cambio.
 
 ---
 
@@ -99,7 +101,7 @@ Gestor rápido de Python y paquetes.
 brew install uv
 ```
 
-Crea túneles SSH de forma simple.
+Limpia y optimiza la Mac (caches, logs, archivos basura).
 
 ```bash
 brew install mole
@@ -157,7 +159,13 @@ CLI oficial de Anthropic para programar con Claude desde la terminal. Requiere N
 npm install -g @anthropic-ai/claude-code
 ```
 
-Verificar con `claude --version`. La primera ejecución pide autenticación.
+Loguear la cuenta de Anthropic (abre el navegador para completar OAuth).
+
+```bash
+claude login
+```
+
+Verificar con `claude --version`.
 
 ---
 
